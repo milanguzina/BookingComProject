@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="BookingComProject" parallel="tests" thread-count="5"> 
+    
+     <test name="Search accommodation functionality test">
+        <classes>
+       <class name="BookingComProject.SearchAccommodationFunctionalityTest"/>
+       </classes>
+      </test>
+      
+      <test name="Negative login test">
+       <classes>
+       <class name="BookingComProject.NegativeLoginTest"/>
+       </classes>
+      </test>
+      
+      <test name="Final Reservation functionality test">
+       <classes>
+       <class name="BookingComProject.FinalReservationFunctionalityTest"/>
+       </classes>
+      </test>
+      
+      <test name="Additional filter search test">
+       <classes>
+       <class name="BookingComProject.AdditionalFilterSearchTest"/>
+       </classes>
+      </test>
+      
+      <test name="Positive login test">
+        <classes>
+        <class name="BookingComProject.PositiveLoginTest"/>
+        </classes>
+      </test>
+    
+</suite> <!-- Suite -->

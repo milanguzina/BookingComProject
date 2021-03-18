@@ -1,0 +1,8 @@
+PageObjects\BookingComResultsPage.class
+PageObjects\BookingComAccommodationPage.class
+PageObjects\BookingComDetailsConfirmationPage.class
+PageObjects\BookingComPaymentPage.class
+Helpers\BookingComStringHelper.class
+PageObjects\BookingComSignInPage.class
+Resources\BaseHelper.class
+PageObjects\BookingComHomePage.class
