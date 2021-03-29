@@ -10,6 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import Resources.BaseHelper;
 
+
 import java.util.List;
 
 public class BookingComHomePage extends BaseHelper {
@@ -42,7 +43,8 @@ public class BookingComHomePage extends BaseHelper {
 
 
     public BookingComHomePage(WebDriver driver) {
-        this.driver = driver;
+    	
+    	this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 

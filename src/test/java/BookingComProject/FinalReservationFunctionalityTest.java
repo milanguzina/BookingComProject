@@ -25,7 +25,8 @@ public class FinalReservationFunctionalityTest extends BaseTest{
 	  @Test (dataProvider = "getData")
 
 	    public void reservationOfChosenAccommodationTest(String username, CharSequence[] password) throws InterruptedException {
-	       bcsip.userLogin(username,password);
+	       driver.get("http:\\www.booking.com");
+		   bcsip.userLogin(username,password);
 	       bchp.accommodationSearch("Berlin");
 	       bcrp.filterSearch();
 	       bcrp.clickOnChooseYourRoom();

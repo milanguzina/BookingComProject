@@ -21,6 +21,7 @@ public class NegativeLoginTest extends BaseTest{
 	  @Test (dataProvider = "getData")
 
 	    public void bookingComNegativeLoginTest(String username, CharSequence[] password) throws InterruptedException, IOException {
+		    getUrl();
 		    bcsip.userLogin(username,password);
 	        wdWait.until(ExpectedConditions.visibilityOfElementLocated(By.id("password-description")));
 	        WebElement errorMessage = driver.findElement(By.id("password-description"));

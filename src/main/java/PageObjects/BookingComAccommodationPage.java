@@ -4,6 +4,7 @@ package PageObjects;
 import Helpers.BookingComStringHelper;
 import Resources.BaseHelper;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,7 +34,8 @@ public class BookingComAccommodationPage extends BaseHelper
     WebDriver driver;
 
     public BookingComAccommodationPage(WebDriver driver) {
-        this.driver = driver;
+    	
+    	this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 

@@ -15,11 +15,12 @@ public class SearchAccommodationFunctionalityTest extends BaseTest{
 
 	    BookingComHomePage bchp = new BookingComHomePage(driver);
 	    BookingComResultsPage bcrp = new BookingComResultsPage(driver);
-	    
+	  
 	  @Test 
 
 	    public void searchAvailableAccommodationTest() {
-	        bchp.accommodationSearch("Berlin");
+	        getUrl();
+		    bchp.accommodationSearch("Berlin");
 	        Assert.assertTrue(bcrp.searchInfoBox.isDisplayed(),"SearchInfo box is not  presented.");
 	        Assert.assertTrue( bcrp.searchInfoBoxCheckIn.getText().contains(("Monday, April 5, 2021")),"Dates of reservation do not match.");
 	        Assert.assertTrue( bcrp.searchInfoBoxCheckOut.getText().contains(("Thursday, April 8, 2021")),"Dates of reservation do not match.");

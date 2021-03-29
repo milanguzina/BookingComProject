@@ -1,5 +1,6 @@
 package PageObjects;
 
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -24,15 +25,9 @@ public class BookingComSignInPage extends BaseHelper
 
     public BookingComSignInPage(WebDriver driver)
     {
-        this.driver=driver;
+    	this.driver=driver;
         PageFactory.initElements(driver,this);
     }
-
-    public  void getAddress(String webAddress)
-    {
-        driver.get(webAddress);
-    }  //gets a  web address
-
 
     private void clickOnNext(){ nextButton.click(); }               //clicks on chosen element(button)
 
@@ -53,7 +48,6 @@ public class BookingComSignInPage extends BaseHelper
 
     public void userLogin(String username, CharSequence[] password ) throws InterruptedException {
         BookingComHomePage bchp = new BookingComHomePage(driver);
-      //  getAddress(webAddress);
         bchp.clickOnSignInButtonHome();
         enterUsername(username);
         clickOnNext();

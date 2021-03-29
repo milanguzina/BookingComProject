@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BookingComProject.PositiveLoginTest">
+      <class name="BookingComProject.AdditionalFilterSearchTest">
         <methods>
           <include name="testTearDown"/>
-          <include name="bookingComPositiveLoginTest" invocation-numbers="0"/>
+          <include name="additionalFilterSearchTest"/>
           <include name="testInit"/>
         </methods>
-      </class> <!-- BookingComProject.PositiveLoginTest -->
+      </class> <!-- BookingComProject.AdditionalFilterSearchTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -26,10 +26,11 @@ public class BookingComDetailsConfirmationPage extends BaseHelper {
     @FindBy (className = "e2e-bp-submit-button--next-step")
     WebElement finalDetailsButton;
 
-    WebDriver driver;
+    public WebDriver driver;
 
     public BookingComDetailsConfirmationPage(WebDriver driver) {
-        this.driver = driver;
+    	
+    	this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 

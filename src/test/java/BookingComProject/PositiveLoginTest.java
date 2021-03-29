@@ -1,9 +1,11 @@
 package BookingComProject;
 
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+
 import org.testng.annotations.Test;
 
 import PageObjects.BookingComSignInPage;
@@ -13,10 +15,12 @@ public class PositiveLoginTest extends BaseTest{
 
 	BookingComSignInPage bcsip = new BookingComSignInPage(driver);
 	
-    @Test (dataProvider = "getData")
-
+    
+   
+    @Test(dataProvider = "getData")
+    
     public void bookingComPositiveLoginTest(String username, CharSequence[] password) throws InterruptedException {
-            driver.get("https://www.booking.com");
+            getUrl();
             bcsip.userLogin(username,password);
             WebElement profileOptionsButton = driver.findElement(By.id("profile-menu-trigger--title"));
             Assert.assertTrue( profileOptionsButton.getText().contains("Guzina Zavrsni"),"Profile options button is not displayed.");
